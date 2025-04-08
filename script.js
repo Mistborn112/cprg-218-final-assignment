@@ -1,15 +1,17 @@
 
-document.addEventListener("DOMContentLoaded", function () {
-    const weatherDiv = document.getElementById("weather");
+const apiKey = "fdcb705195fcb7c8bed32a59408837ae"; // Replace with your OpenWeatherMap API key
+const city = "Cancun,mx";
+const url = `https://api.openweathermap.org/data/2.5/weather?q=cancun,mx&units=metric&appid=fdcb705195fcb7c8bed32a59408837ae`;
 
-    fetch("https://api.openweathermap.org/data/2.5/weather?=Cancun,mx&units=metric&appid=b27e347d23bffe25cce17b6c063c8a99")
-      .then(response => response.json())
-      .then(data => {
-        const temp = Math.round(data.main.temp);
-        const condition = data.weather[0].main;
-        weatherDiv.textContent = `Cancún: ${temp}°C, ${condition}`;
-      })
-      .catch(() => {
-        weatherDiv.textContent = "Weather info unavailable";
-      });
-  });
+fetch(url)
+.then(response => response.json())
+.then(data => {
+    const temp = Math.round(data.main.temp);
+    const wind = Math.round(data.wind.speed);
+    const weatherBox = document.getElementById("weather");
+    weatherBox.textContent = `${temp}°C | Wind: ${wind} kph`;
+})
+.catch(() => {
+      document.getElementById("weather").textContent = "Weather unavailable";
+});
+
