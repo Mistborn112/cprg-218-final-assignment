@@ -69,11 +69,6 @@
     max-width: 1200px;
     margin: auto;
 }
-.amenities {
-  padding: 2rem 1rem;
-  max-width: 1200px;
-  margin: auto;
-}
   
 .room {
     display: flex;
@@ -94,17 +89,6 @@
 .room h3 {
     margin: 0 0 0.5rem;
 }
-
-.spa img {
-  width: 1250px;
-  height: auto;
-  border-radius: 8px;
-}
-.resturaunt img {
-  width: 1250px;
-  height: auto;
-  border-radius: 8px;
-}
   
 @media (max-width: 768px) {
   .room {
@@ -114,20 +98,6 @@
   
   .room img {
       width: 100%;
-  }
-  .spa {
-    flex-direction: column;
-    align-items: center;
-  }
-  .spa img {
-    width: 100%;
-  }
-  .resturaunt {
-    flex-direction: column;
-    align-items: center;
-  }
-  .resturaunt img {
-    width: 100%;
   }
   
   .main-nav ul {
