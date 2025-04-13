@@ -39,43 +39,14 @@
     background-color: #f4a261;
     color: #002147;
   }
-
-  .hero {
-    text-align: center;
-    padding: 3rem 1rem;
-    background: url('hero.jpg') center/cover no-repeat;
-    color: white;
-  }
   
-  .intro {
-    background: #f0f8ff;
-    padding: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .intro-text, .intro-highlight {
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-.accommodations {
+.amenities{
     padding: 2rem 1rem;
     max-width: 1200px;
     margin: auto;
 }
-.amenities {
-  padding: 2rem 1rem;
-  max-width: 1200px;
-  margin: auto;
-}
   
-.room {
+.spa {
     display: flex;
     gap: 1rem;
     background: white;
@@ -85,62 +56,59 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
   
-.room img {
+.spa img {
     width: 150px;
     height: auto;
     border-radius: 8px;
 }
-  
-.room h3 {
-    margin: 0 0 0.5rem;
-}
 
-.spa img {
-  width: 1250px;
-  height: auto;
-  border-radius: 8px;
+.resturaunt {
+    display: flex;
+    gap: 1rem;
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .resturaunt img {
-  width: 1250px;
-  height: auto;
-  border-radius: 8px;
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
 }
-  
 @media (max-width: 768px) {
-  .room {
+    .room {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+    .room img {
+        width: 100%;
+    }
+    .spa {
       flex-direction: column;
       align-items: center;
     }
-  
-  .room img {
+    .spa img {
       width: 100%;
-  }
-  .spa {
-    flex-direction: column;
-    align-items: center;
-  }
-  .spa img {
-    width: 100%;
-  }
-  .resturaunt {
-    flex-direction: column;
-    align-items: center;
-  }
-  .resturaunt img {
-    width: 100%;
-  }
-  
-  .main-nav ul {
+    }
+    .resturaunt {
       flex-direction: column;
-      gap: 0.5rem;
+      align-items: center;
+    }
+    .resturaunt img {
+      width: 100%;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
   }
-}
-footer {
-  text-align: center;
-  background: #002b4e;
-  padding: 0.75rem 1rem;
-  color: white;
- 
-}
-
-
+  footer {
+    text-align: center;
+    background: #002b4e;
+    padding: 0.75rem 1rem;
+    color: white;
+   
+  }
